@@ -37,17 +37,17 @@ const adminSchema = new mongoose.Schema({
         }, 
        
         address: {
-         current: {
-            street: {type:String,required:true,trim:true},
-            city: {type:String,required:true,trim:true},
-            pincode: {type:Number,required:true,trim:true}
+            type: String,
+            required: true
           },
+          
           isDeleted:{
             type:Boolean,
             default :false
           }
+        
 
-          }
+        
 },{timestamps:true})
 
 

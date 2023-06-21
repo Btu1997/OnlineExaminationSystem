@@ -18,8 +18,12 @@ const questionSchema = new mongoose.Schema({
     correctOptionId:{
         type : String,
         required: true,
+    },
+    isDeleted:{
+        type: Boolean,
+        default:false
     }
 
 },{timestamps: true})
 
-module.exports = mogoose.model("questions", questionSchema);
+module.exports = mongoose.model("questions", questionSchema);

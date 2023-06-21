@@ -39,25 +39,11 @@ const studentSchema = new mongoose.Schema({
             unique:true,
             trim:true
         }, 
-        profileImage: {
-            type:String, 
-            required:true,
-            trim:true
-        }, // s3 link
+         address: {
+                type: String,
+                required: true
+              },
       
-       
-        address: {
-         current: {
-            street: {type:String,required:true,trim:true},
-            city: {type:String,required:true,trim:true},
-            pincode: {type:Number,required:true,trim:true}
-          },
-          permanent: {
-            street: {type:String,required:true,trim:true},
-            city: {type:String,required:true,trim:true},
-            pincode: {type:Number,required:true,trim:true}
-          }
-      }
 },{timestamps:true})
 
 

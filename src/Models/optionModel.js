@@ -1,8 +1,14 @@
 const mongoose = require("mongoose");
 
 const optionSchema = new mongoose.Schema({
-    qOptionId:{},
-    qId:{},
+    OptionId:{
+        type:String,
+        required:true
+    },
+    qId:{
+        type:String,
+        
+    },
     optionDescription:{},
 
 },
